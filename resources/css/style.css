@@ -99,6 +99,10 @@ nav span {
   margin: 0.75rem 0;
 }
 
+#Menu {
+  display: none;
+}
+
 /* Shop */
 .shop {
   display: flex;
@@ -174,4 +178,47 @@ footer {
   width: 960px;
   padding: 5rem 0;
   background-color: black;
+}
+
+/* Media Querrys */
+
+@media only screen and (max-width: 1024px) {
+
+  /* Navigation */
+  nav div span{
+    display: none;
+  }
+
+  nav div {
+    justify-content: center;
+  }
+
+  #Menu {
+    display: block;
+  }
+
+  /* Shop */
+  .shop {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .shop_item {
+    width: 47%;
+  }
+
+  .item3 {
+    display: none;
+  }
+
+  /* Information */
+  .information {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  /* Footer */
+  .footer_content{
+    width: 100%;
+  }
 }
